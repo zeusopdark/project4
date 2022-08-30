@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 1.4rem;
+    border-top: 3px double #8c8b8b;
+}
+
+body {
+    background: linear-gradient(rgb(246, 242, 242), #bbaaaa);
+    /* overflow: hidden; */
+}
+
+#nav {
+    padding: 1rem 3rem 3rem;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: 'Poppins-Light 300 Italic';
+}
+
+#o {
+    padding: 0 0.1rem 0;
+    font-size: 2.5rem;
+    color: red;
+}
+
+.nav-link {
+    font-size: 1.14rem;
+    transition: transform 0.25s ease-in-out;
+    font-family: 'Poppins';
+}
+
+.cart .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link {
+    color: rgb(33, 22, 22);
+}
+
+.nav-link:hover {
+    color: #bd013f;
+    transform: translateY(-0.25em);
+}
+
+.first {
+    font-weight: 600;
+}
+
+
+.nav-link:hover {
+    color: #bd013f;
+    transform: translateY(-0.25em);
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgb(246, 242, 242), rgba(140, 123, 194, 0.416)), url("images/contact\ us.jpg");
+    height: 40vh;
+    width: 100%;
+    text-align: center;
+    background-position: top;
+    background-size: cover;
+    color: rgb(33, 27, 27);
+    margin-bottom: 6rem;
+
+}
+
+.front h2 {
+    font-family: 'Montserrat Medium 500';
+    font-weight: 600;
+    font-size: 48px;
+}
+
+#btnTop {
+    position: fixed;
+    right: 13px;
+    bottom: 10px;
+
+}
+
+#btnTop button {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    background-color: #ed507c58;
+    border: none;
+    box-shadow: rgb(44, 62, 80) 0px 0px 15px 0px inset;
+    opacity: 0.7;
+    color: red;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+#btnTop button:hover {
+    background-color: #d77593eb;
+    color: black;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+/* zoom in  */
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+/* zoom out  */
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+
+/* contact  */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    width: 80%;
+    margin: auto;
+}
+
+.content {
+    position: relative;
+    margin: 0.8rem;
+}
+
+.content i {
+    position: absolute;
+    opacity: 0.2;
+    top: .8rem;
+    left: 0.7rem;
+}
+
+input,
+textarea {
+    border: 1px solid rgb(130, 127, 127);
+}
+
+.content input[type="email"] {
+    padding: 1rem 8rem;
+    margin: auto;
+    background: transparent;
+}
+
+.content input[type="textarea"] {
+    padding: 0 8rem;
+    background: transparent;
+    height: 200px;
+}
+
+.content input {
+    border-radius: 30px;
+}
+
+.border {
+    border: 1px solid rgb(193, 192, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    padding: 3rem 9rem;
+    border: 1px solid rgb(193, 192, 192);
+    font-family: 'Montserrat Medium 500';
+}
+
+
+.border1 i {
+    opacity: 0.55;
+    margin-right: 1rem;
+}
+
+.border h3 {
+    text-align: center;
+    font-family: 'Montserrat Medium 500';
+    margin-top: 3rem;
+}
+
+#buy {
+    background-color: rgb(23, 3, 3);
+    border: 2px solid;
+    border-radius: 30px;
+    color: #dae4d3;
+    padding: 0.8em 8rem;
+    margin: 3rem 0;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s, background-color 0.25s;
+
+}
+
+#buy:hover {
+    border-color: rgb(214, 123, 11);
+    color: rgb(188, 203, 18);
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.header a {
+    text-decoration: none;
+    position: relative;
+    left: 1rem;
+}
+
+.map {
+    width: 80%;
+    margin: auto;
+    margin: 5rem auto;
+    text-align: center;
+    font-family: 'Montserrat Medium 500';
+}
+
+.map h1 {
+    padding-bottom: 2rem;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    filter: invert(100%);
+}
+
+
+
+
+
+.foot {
+    background-color: rgb(41, 38, 38);
+    color: rgb(192, 183, 183);
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.foot .row {
+    width: 90%;
+    margin: auto;
+}
+
+.foot .col-md-3 {
+    text-align: left;
+    font-family: 'Montserrat Light';
+}
+
+.foot h4 {
+    font-family: 'Montserrat Medium 500';
+    font-weight: 900;
+    color: #fff;
+}
+
+.email {
+    display: block;
+    background: transparent;
+    color: #fff;
+}
+
+.foot button {
+    margin: 1rem 0;
+}
+
+.col-md-3 i {
+    padding: 0.5rem 0.3rem;
+}
+
+#list {
+    padding: 0;
+}
+
+#list a {
+    text-decoration: none;
+    color: rgb(209, 197, 197);
+    transition: color 0.5s;
+}
+
+#list a:hover {
+    color: rgb(51, 14, 173);
+}
+
+.subscribe {
+    padding: 0.4rem 1.2rem;
+
+}
+
+.sponser {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.sponser .pay {
+    padding-bottom: 2rem;
+}
+
+.pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.email {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+@media(max-width:550px) {
+    .border1 {
+        gap: 1rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .content input[type="email"] {
+        padding: 1rem 4rem;
+        margin: auto;
+        background: transparent;
+    }
+
+    .content input[type="textarea"] {
+        padding: 6rem 4rem;
+        background: transparent;
+    }
+}
+
+@media(min-width:1191px) {
+    .border1 p {
+        padding-left: 3rem;
+    }
+
+    .border1 a {
+        padding-left: 1.3rem;
+    }
+}
+
+/* @media(max-width:1024px) {
+    .content input[type="email"] {
+        padding: 1rem 3.8rem;
+        margin: auto;
+        background: transparent;
+    }
+
+    .content input[type="textarea"] {
+        padding: 6rem 3.8rem;
+        background: transparent;
+    }
+
+    .border1 p {
+        padding-left: 2rem;
+    }
+
+    .border1 a {
+        padding-left: 1rem;
+    }
+} */
